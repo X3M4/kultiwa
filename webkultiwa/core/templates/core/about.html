@@ -1,0 +1,64 @@
+{% extends 'core/base.html'%}
+
+{% block title %}Portada{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/lollo-rosso.jpg' %}{% endblock %}
+
+{% block headers %}
+<a class="navbar-brand"  href="{% url 'home' %}">
+  <img src="{% static 'core/img/kultiwa-white-long.png' %}" width="260" height="350" />
+</a>
+
+<header class="title">
+  <h2>Nuestro <span>Equipo</span></h2>
+  <p>Para que conozcan más a nueestro equipo de trabajo</p>
+</header>
+{% endblock %}
+
+{% block content %}
+<section id="team" class="light">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="wrap animated" data-animate="fadeInDown">
+          <div class="img-team">
+            <img src="{% static 'core/img/guille.jpeg' %}" alt="" class="img-circle">
+          </div>
+
+          <h3>Guillermo Ferrero</h3>
+          <h5>CEO</h5>
+
+          <p type="text/css">Joven emprendedor y CEO de Kultiwa es graduado en Administración y Dirección de Empresas con Máster en Marketing Digital.</p>
+
+          <div class="team-social">
+            <ul class="list-inline social-list">
+              <li><a href="#" class="fa fa-linkedin"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 text-center">
+        <div class="wrap animated" data-animate="fadeInDown">
+          <div class="img-team">
+            <img src="{% static 'core/img/chema.jpg' %} "alt="" class="img-circle">
+          </div>
+
+          <h3>Chema Fernández</h3>
+          <h5>CAO</h5>
+
+          <p>Ingeniero Técnico Agrícola con Máster en Seguridad Alimentaria ha desempeñado su
+            trabajo en grandes empresas productoras y comercializadoras a nivel Europeo es el CAO de Kultiwa.</p>
+
+          <div class="team-social">
+            <ul class="list-inline social-list">
+              <li><a href="#" class="fa fa-linkedin"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+{% endblock %}
